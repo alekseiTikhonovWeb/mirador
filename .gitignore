@@ -2,4 +2,4 @@ dist/
 coverage/
 node_modules/
 *.log
-*.tgz
+*.tgz.DS_Store

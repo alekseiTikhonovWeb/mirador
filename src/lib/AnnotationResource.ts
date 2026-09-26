@@ -3,8 +3,11 @@ import { v4 as uuid } from 'uuid';
 
 /** */
 export default class AnnotationResource {
+  resource: any;
+  _id: string | undefined;
+
   /** */
-  constructor(resource = {}) {
+  constructor(resource: any = {}) {
     this.resource = resource;
   }
 

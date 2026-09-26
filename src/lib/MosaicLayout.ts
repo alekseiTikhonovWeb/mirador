@@ -5,13 +5,18 @@ import {
   getOtherDirection,
   getPathToCorner,
   Corner,
+  MosaicNode,
 } from 'react-mosaic-component';
 import dropRight from 'lodash/dropRight';
 
+type MosaicKey = string | number;
+
 /** */
 export default class MosaicLayout {
+  layout: MosaicNode<MosaicKey> | null;
+
   /** */
-  constructor(layout) {
+  constructor(layout: MosaicNode<MosaicKey> | null) {
     this.layout = layout;
   }
 
@@ -41,7 +46,7 @@ export default class MosaicLayout {
       const path = this.pathToCorner();
       const parent = this.pathToParent(path);
       const destination = this.nodeAtPath(path);
-      const direction = parent ? getOtherDirection(parent.direction) : 'row';
+      const direction = parent ? getOtherDirection((parent as any).direction) : 'row';
       let children;
       if (direction === 'row') {
         children = [destination, addedWindowIds[i]];
@@ -52,7 +57,7 @@ export default class MosaicLayout {
         path,
         spec: {
           $set: {
-            type: 'split',
+            type: 'split' as const,
             direction,
             children,
           },

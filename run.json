@@ -3,7 +3,7 @@
   "repo": "github.com/alekseiTikhonovWeb/mirador",
   "src": "src",
   "startedAt": "2026-09-26T19:33:06.670Z",
-  "updatedAt": "2026-09-26T20:18:56.999Z",
+  "updatedAt": "2026-09-26T20:52:45.677Z",
   "graph": {
     "layers": [
       [
@@ -43,18 +43,18 @@
         "src/contexts/OpenSeadragonViewerContext.js",
         "src/contexts/WorkspaceContext.js",
         "src/extend/PluginContext.js",
-        "src/extend/pluginValidation.js",
-        "src/i18n.js",
-        "src/lib/AnnotationItem.js",
-        "src/lib/AnnotationResource.js",
-        "src/lib/CanvasGroupings.js",
-        "src/lib/FullScreenHandle.jsx",
-        "src/lib/MiradorManifest.js",
-        "src/lib/MosaicLayout.js",
-        "src/lib/OpenSeadragonCanvasOverlay.js",
-        "src/lib/TruncatedHit.js",
-        "src/lib/asArray.js",
-        "src/lib/htmlRules.js",
+        "src/extend/pluginValidation.ts",
+        "src/i18n.ts",
+        "src/lib/AnnotationItem.ts",
+        "src/lib/AnnotationResource.ts",
+        "src/lib/CanvasGroupings.ts",
+        "src/lib/FullScreenHandle.tsx",
+        "src/lib/MiradorManifest.ts",
+        "src/lib/MosaicLayout.ts",
+        "src/lib/OpenSeadragonCanvasOverlay.ts",
+        "src/lib/TruncatedHit.ts",
+        "src/lib/asArray.ts",
+        "src/lib/htmlRules.ts",
         "src/lib/iiif.js",
         "src/lib/readImageMetadata.js",
         "src/lib/svgShapesToPath.js",
@@ -439,7 +439,7 @@
         "imports": [
           "src/lib/CanvasAnnotationDisplay.js",
           "src/lib/CanvasWorld.js",
-          "src/lib/OpenSeadragonCanvasOverlay.js",
+          "src/lib/OpenSeadragonCanvasOverlay.ts",
           "src/lib/svgShapesToPath.js"
         ]
       },
@@ -458,8 +458,8 @@
           "src/contexts/FailedImageProvider.jsx",
           "src/contexts/FullScreenContext.js",
           "src/contexts/LocaleContext.js",
-          "src/i18n.js",
-          "src/lib/FullScreenHandle.jsx"
+          "src/i18n.ts",
+          "src/lib/FullScreenHandle.tsx"
         ]
       },
       "src/components/AttributionPanel.jsx": {
@@ -533,7 +533,7 @@
           "src/containers/ManifestInfo.js",
           "src/containers/ScrollIndicatedDialogContent.js",
           "src/contexts/WorkspaceContext.js",
-          "src/lib/asArray.js"
+          "src/lib/asArray.ts"
         ]
       },
       "src/components/CollectionInfo.jsx": {
@@ -788,7 +788,7 @@
         "lines": 38,
         "imports": [
           "src/config/css-ns.js",
-          "src/lib/htmlRules.js"
+          "src/lib/htmlRules.ts"
         ]
       },
       "src/components/ScrollIndicatedDialogContent.tsx": {
@@ -807,7 +807,7 @@
           "src/components/ScrollTo.jsx",
           "src/config/css-ns.js",
           "src/containers/SanitizedHtml.js",
-          "src/lib/TruncatedHit.js"
+          "src/lib/TruncatedHit.ts"
         ]
       },
       "src/components/SearchPanel.jsx": {
@@ -1183,7 +1183,7 @@
         "imports": [
           "src/containers/MosaicRenderPreview.js",
           "src/containers/Window.js",
-          "src/lib/MosaicLayout.js",
+          "src/lib/MosaicLayout.ts",
           "src/styles/react-mosaic-component.js"
         ]
       },
@@ -2334,7 +2334,7 @@
           "src/extend/PluginProvider.jsx",
           "src/extend/pluginMapping.js",
           "src/extend/pluginPreprocessing.js",
-          "src/extend/pluginValidation.js",
+          "src/extend/pluginValidation.ts",
           "src/extend/withPlugins.jsx"
         ]
       },
@@ -2347,10 +2347,10 @@
       "src/extend/pluginPreprocessing.js": {
         "lines": 46,
         "imports": [
-          "src/extend/pluginValidation.js"
+          "src/extend/pluginValidation.ts"
         ]
       },
-      "src/extend/pluginValidation.js": {
+      "src/extend/pluginValidation.ts": {
         "lines": 59,
         "imports": []
       },
@@ -2386,7 +2386,7 @@
           "src/state/selectors/thumbnails.js"
         ]
       },
-      "src/i18n.js": {
+      "src/i18n.ts": {
         "lines": 72,
         "imports": []
       },
@@ -2417,24 +2417,24 @@
           "src/lib/AnnotationPage.js"
         ]
       },
-      "src/lib/AnnotationItem.js": {
-        "lines": 130,
+      "src/lib/AnnotationItem.ts": {
+        "lines": 133,
         "imports": []
       },
       "src/lib/AnnotationList.js": {
         "lines": 32,
         "imports": [
-          "src/lib/AnnotationResource.js"
+          "src/lib/AnnotationResource.ts"
         ]
       },
       "src/lib/AnnotationPage.js": {
         "lines": 42,
         "imports": [
-          "src/lib/AnnotationItem.js"
+          "src/lib/AnnotationItem.ts"
         ]
       },
-      "src/lib/AnnotationResource.js": {
-        "lines": 123,
+      "src/lib/AnnotationResource.ts": {
+        "lines": 126,
         "imports": []
       },
       "src/lib/CanvasAnnotationDisplay.js": {
@@ -2443,8 +2443,8 @@
           "src/lib/svgShapesToPath.js"
         ]
       },
-      "src/lib/CanvasGroupings.js": {
-        "lines": 56,
+      "src/lib/CanvasGroupings.ts": {
+        "lines": 60,
         "imports": []
       },
       "src/lib/CanvasWorld.js": {
@@ -2467,7 +2467,7 @@
           "src/containers/WindowSideBarInfoPanel.js"
         ]
       },
-      "src/lib/FullScreenHandle.jsx": {
+      "src/lib/FullScreenHandle.tsx": {
         "lines": 77,
         "imports": []
       },
@@ -2477,8 +2477,8 @@
           "src/lib/iiif.js"
         ]
       },
-      "src/lib/MiradorManifest.js": {
-        "lines": 45,
+      "src/lib/MiradorManifest.ts": {
+        "lines": 47,
         "imports": []
       },
       "src/lib/MiradorViewer.jsx": {
@@ -2489,31 +2489,31 @@
           "src/state/createPluggableStore.js"
         ]
       },
-      "src/lib/MosaicLayout.js": {
-        "lines": 78,
+      "src/lib/MosaicLayout.ts": {
+        "lines": 83,
         "imports": []
       },
-      "src/lib/OpenSeadragonCanvasOverlay.js": {
-        "lines": 108,
+      "src/lib/OpenSeadragonCanvasOverlay.ts": {
+        "lines": 117,
         "imports": []
       },
       "src/lib/ThumbnailFactory.js": {
         "lines": 311,
         "imports": [
           "src/lib/MiradorCanvas.js",
-          "src/lib/MiradorManifest.js",
-          "src/lib/asArray.js"
+          "src/lib/MiradorManifest.ts",
+          "src/lib/asArray.ts"
         ]
       },
-      "src/lib/TruncatedHit.js": {
-        "lines": 35,
+      "src/lib/TruncatedHit.ts": {
+        "lines": 40,
         "imports": []
       },
-      "src/lib/asArray.js": {
+      "src/lib/asArray.ts": {
         "lines": 12,
         "imports": []
       },
-      "src/lib/htmlRules.js": {
+      "src/lib/htmlRules.ts": {
         "lines": 29,
         "imports": []
       },
@@ -2525,23 +2525,23 @@
         "lines": 24,
         "imports": [
           "src/lib/AnnotationFactory.js",
-          "src/lib/AnnotationItem.js",
+          "src/lib/AnnotationItem.ts",
           "src/lib/AnnotationList.js",
           "src/lib/AnnotationPage.js",
-          "src/lib/AnnotationResource.js",
+          "src/lib/AnnotationResource.ts",
           "src/lib/CanvasAnnotationDisplay.js",
-          "src/lib/CanvasGroupings.js",
+          "src/lib/CanvasGroupings.ts",
           "src/lib/CanvasWorld.js",
           "src/lib/CompanionWindowRegistry.js",
           "src/lib/MiradorCanvas.js",
-          "src/lib/MiradorManifest.js",
+          "src/lib/MiradorManifest.ts",
           "src/lib/MiradorViewer.jsx",
-          "src/lib/MosaicLayout.js",
-          "src/lib/OpenSeadragonCanvasOverlay.js",
+          "src/lib/MosaicLayout.ts",
+          "src/lib/OpenSeadragonCanvasOverlay.ts",
           "src/lib/ThumbnailFactory.js",
-          "src/lib/TruncatedHit.js",
-          "src/lib/asArray.js",
-          "src/lib/htmlRules.js",
+          "src/lib/TruncatedHit.ts",
+          "src/lib/asArray.ts",
+          "src/lib/htmlRules.ts",
           "src/lib/readImageMetadata.js"
         ]
       },
@@ -2903,7 +2903,7 @@
       "src/state/selectors/canvases.js": {
         "lines": 261,
         "imports": [
-          "src/lib/CanvasGroupings.js",
+          "src/lib/CanvasGroupings.ts",
           "src/lib/iiif.js",
           "src/state/selectors/getters.js",
           "src/state/selectors/manifests.js",
@@ -2966,7 +2966,7 @@
       "src/state/selectors/manifests.js": {
         "lines": 428,
         "imports": [
-          "src/lib/asArray.js",
+          "src/lib/asArray.ts",
           "src/state/selectors/companionWindows.js",
           "src/state/selectors/config.js",
           "src/state/selectors/getters.js",
@@ -3043,7 +3043,7 @@
         "lines": 16,
         "imports": [
           "src/lib/MiradorCanvas.js",
-          "src/lib/MiradorManifest.js"
+          "src/lib/MiradorManifest.ts"
         ]
       },
       "src/styles/react-mosaic-component.js": {
@@ -3053,8 +3053,8 @@
     },
     "stats": {
       "files": 329,
-      "jsFiles": 305,
-      "tsFiles": 24,
+      "jsFiles": 293,
+      "tsFiles": 36,
       "edges": 1038,
       "layers": 42,
       "cycleFiles": 0
@@ -3064,12 +3064,14 @@
     "js": [
       329,
       317,
-      305
+      305,
+      293
     ],
     "any": [
       0,
       7,
-      9
+      9,
+      27
     ]
   },
   "batches": [
@@ -3532,6 +3534,219 @@
         "js": 305,
         "any": 9
       }
+    },
+    {
+      "id": "b03",
+      "layer": 0,
+      "files": [
+        "src/components/icons/WindowMaxIcon.jsx",
+        "src/components/icons/WindowMinIcon.jsx",
+        "src/components/icons/WindowOptionsIcon.jsx",
+        "src/components/icons/WorkspaceTypeElasticIcon.jsx",
+        "src/components/icons/WorkspaceTypeMosaicIcon.jsx",
+        "src/config/settings.js",
+        "src/contexts/FailedImageContext.js",
+        "src/contexts/FullScreenContext.js",
+        "src/contexts/LocaleContext.js",
+        "src/contexts/OpenSeadragonViewerContext.js",
+        "src/contexts/WorkspaceContext.js",
+        "src/extend/PluginContext.js"
+      ],
+      "status": "rolled_back",
+      "startedAt": "2026-09-26T20:25:55.272Z",
+      "attempts": 2,
+      "checks": {
+        "typecheck": {
+          "ok": true,
+          "errors": 0
+        },
+        "tests": {
+          "ok": true,
+          "passed": 1255,
+          "failed": 0
+        }
+      },
+      "finishedAt": "2026-09-26T20:32:02.840Z",
+      "durationSec": 368,
+      "notes": "Same Bob without the Migrator mode: refactored while converting. Rejected at gate 2, rolled back.",
+      "ratchet": {
+        "js": 293,
+        "any": 9
+      }
+    },
+    {
+      "id": "b04",
+      "layer": 0,
+      "files": [
+        "src/extend/pluginValidation.js",
+        "src/i18n.js",
+        "src/lib/AnnotationItem.js",
+        "src/lib/AnnotationResource.js",
+        "src/lib/CanvasGroupings.js",
+        "src/lib/FullScreenHandle.jsx",
+        "src/lib/MiradorManifest.js",
+        "src/lib/MosaicLayout.js",
+        "src/lib/OpenSeadragonCanvasOverlay.js",
+        "src/lib/TruncatedHit.js",
+        "src/lib/asArray.js",
+        "src/lib/htmlRules.js"
+      ],
+      "status": "done",
+      "startedAt": "2026-09-26T20:38:03.873Z",
+      "attempts": 1,
+      "checks": {
+        "typecheck": {
+          "ok": true,
+          "errors": 0
+        },
+        "tests": {
+          "ok": true,
+          "passed": 117,
+          "failed": 0
+        }
+      },
+      "semantic": [
+        {
+          "file": "src/lib/AnnotationItem.ts",
+          "kind": "any",
+          "symbol": "resource",
+          "note": "Field — raw WebAnnotation object, shape unknown at compile time"
+        },
+        {
+          "file": "src/lib/AnnotationItem.ts",
+          "kind": "any",
+          "symbol": "constructor(resource)",
+          "note": "Constructor param"
+        },
+        {
+          "file": "src/lib/AnnotationItem.ts",
+          "kind": "nullable",
+          "symbol": "_id",
+          "note": "string | undefined — lazy-initialized id, undefined until first get id access"
+        },
+        {
+          "file": "src/lib/AnnotationResource.ts",
+          "kind": "any",
+          "symbol": "resource",
+          "note": "Field — raw IIIF annotation object"
+        },
+        {
+          "file": "src/lib/AnnotationResource.ts",
+          "kind": "any",
+          "symbol": "constructor(resource)",
+          "note": "Constructor param"
+        },
+        {
+          "file": "src/lib/AnnotationResource.ts",
+          "kind": "nullable",
+          "symbol": "_id",
+          "note": "string | undefined — lazy-initialized id"
+        },
+        {
+          "file": "src/lib/CanvasGroupings.ts",
+          "kind": "any",
+          "symbol": "canvases",
+          "note": "Field — IIIF canvas objects, shape from external manifesto lib"
+        },
+        {
+          "file": "src/lib/CanvasGroupings.ts",
+          "kind": "nullable",
+          "symbol": "_groupings",
+          "note": "any[][] | null — memoized groupings, null before first groupings() call"
+        },
+        {
+          "file": "src/lib/MiradorManifest.ts",
+          "kind": "any",
+          "symbol": "manifest",
+          "note": "Field — manifesto Manifest instance, no @types package"
+        },
+        {
+          "file": "src/lib/MiradorManifest.ts",
+          "kind": "any",
+          "symbol": "constructor(manifest)",
+          "note": "Constructor param"
+        },
+        {
+          "file": "src/lib/MosaicLayout.ts",
+          "kind": "type",
+          "symbol": "MosaicKey",
+          "note": "Local type alias string | number — MosaicKey not exported from react-mosaic-component"
+        },
+        {
+          "file": "src/lib/MosaicLayout.ts",
+          "kind": "nullable",
+          "symbol": "layout",
+          "note": "MosaicNode<MosaicKey> | null — null is a valid empty layout in react-mosaic"
+        },
+        {
+          "file": "src/lib/MosaicLayout.ts",
+          "kind": "cast",
+          "symbol": "(parent as any).direction",
+          "note": "parent is MosaicNode which can be string leaf; at runtime parent on a non-leaf path is always a split node"
+        },
+        {
+          "file": "src/lib/MosaicLayout.ts",
+          "kind": "other",
+          "symbol": "type: 'split' as const",
+          "note": "Narrows string to literal 'split' to satisfy MosaicSplitNode"
+        },
+        {
+          "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
+          "kind": "any",
+          "symbol": "viewer",
+          "note": "OSD Viewer — no @types/openseadragon package"
+        },
+        {
+          "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
+          "kind": "any",
+          "symbol": "ref",
+          "note": "React ref passed in, typed any to avoid React import dependency"
+        },
+        {
+          "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
+          "kind": "nullable",
+          "symbol": "viewportWidth",
+          "note": "number | undefined — set in resize(), not in constructor"
+        },
+        {
+          "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
+          "kind": "nullable",
+          "symbol": "viewportHeight",
+          "note": "number | undefined — set in resize(), not in constructor"
+        },
+        {
+          "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
+          "kind": "nullable",
+          "symbol": "clearBeforeRedraw",
+          "note": "boolean | undefined — optional flag read in canvasUpdate(), never set in constructor"
+        },
+        {
+          "file": "src/lib/TruncatedHit.ts",
+          "kind": "any",
+          "symbol": "hit",
+          "note": "Search hit from external IIIF search API"
+        },
+        {
+          "file": "src/lib/TruncatedHit.ts",
+          "kind": "any",
+          "symbol": "annotation",
+          "note": "Optional annotation object"
+        },
+        {
+          "file": "src/lib/TruncatedHit.ts",
+          "kind": "any",
+          "symbol": "constructor(hit, annotation)",
+          "note": "Constructor params"
+        }
+      ],
+      "notes": "3 pre-existing typecheck errors in FullScreenContext.ts, LocaleContext.ts, PluginContext.ts (createContext() missing type arg) — all outside this batch, carried from prior batch. All 117 related tests pass.",
+      "ratchet": {
+        "js": 293,
+        "any": 27
+      },
+      "finishedAt": "2026-09-26T20:52:45.674Z",
+      "durationSec": 882,
+      "session": "bob_sessions/b04.json"
     }
   ]
 }

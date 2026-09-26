@@ -3,8 +3,10 @@
  * https://iiif-commons.github.io/manifesto/classes/_canvas_.manifesto.canvas.html
  */
 export default class MiradorManifest {
+  manifest: any;
+
   /** */
-  constructor(manifest) {
+  constructor(manifest: any) {
     this.manifest = manifest;
   }
 

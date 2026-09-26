@@ -2,9 +2,13 @@
  *
  */
 export default class CanvasGroupings {
+  canvases: any[];
+  viewType: string;
+  _groupings: any[][] | null;
+
   /**
    */
-  constructor(canvases, viewType = 'single') {
+  constructor(canvases: any[], viewType: string = 'single') {
     this.canvases = canvases;
     this.viewType = viewType;
     this._groupings = null;

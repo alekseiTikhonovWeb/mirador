@@ -5,8 +5,11 @@ import { v4 as uuid } from 'uuid';
  * A modeled WebAnnotation item
  */
 export default class AnnotationItem {
+  resource: any;
+  _id: string | undefined;
+
   /** */
-  constructor(resource = {}) {
+  constructor(resource: any = {}) {
     this.resource = resource;
   }
 

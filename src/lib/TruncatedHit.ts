@@ -1,7 +1,12 @@
 /** */
 export default class TruncatedHit {
+  hit: any;
+  annotation: any;
+  maxChars: number;
+  minimum: number;
+
   /** */
-  constructor(hit, annotation = undefined, { maxChars = 200, minimum = 20 } = {}) {
+  constructor(hit: any, annotation: any = undefined, { maxChars = 200, minimum = 20 } = {}) {
     this.hit = hit;
     this.annotation = annotation;
     this.maxChars = maxChars || 200;

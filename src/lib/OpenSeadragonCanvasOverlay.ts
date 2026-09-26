@@ -7,10 +7,19 @@
  * https://github.com/altert/OpenseadragonFabricjsOverlay
  */
 export default class OpenSeadragonCanvasOverlay {
+  viewer: any;
+  ref: any;
+  containerWidth: number;
+  containerHeight: number;
+  viewportOrigin: { x: number; y: number };
+  viewportWidth: number | undefined;
+  viewportHeight: number | undefined;
+  clearBeforeRedraw: boolean | undefined;
+
   /**
    * constructor - sets up the Canvas overlay container
    */
-  constructor(viewer, ref) {
+  constructor(viewer: any, ref: any) {
     this.viewer = viewer;
     this.ref = ref;
 
