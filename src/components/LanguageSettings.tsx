@@ -4,11 +4,22 @@ import MenuItem from '@mui/material/MenuItem';
 import CheckIcon from '@mui/icons-material/CheckSharp';
 import PropTypes from 'prop-types';
 
+interface Language {
+  current: boolean;
+  label: string;
+  locale: string;
+}
+
+interface LanguageSettingsProps {
+  handleClick: (locale: string) => void;
+  languages: Language[];
+}
+
 /**
  * LanguageSettings ~ the workspace sub menu to change the language
  * of the application
  */
-export function LanguageSettings({ handleClick, languages }) {
+export function LanguageSettings({ handleClick, languages }: LanguageSettingsProps) {
   return (
     <>
       {languages.map((language) => (

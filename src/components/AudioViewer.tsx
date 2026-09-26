@@ -12,8 +12,14 @@ const StyledAudio = styled('audio')({
   width: '100%',
 });
 
+interface AudioViewerProps {
+  audioOptions?: Record<string, any>;
+  audioResources?: any[];
+  captions?: any[];
+}
+
 /** */
-export function AudioViewer({ audioOptions = {}, audioResources = [], captions = [] }) {
+export function AudioViewer({ audioOptions = {}, audioResources = [], captions = [] }: AudioViewerProps) {
   return (
     <StyledContainer>
       <StyledAudio {...audioOptions}>

@@ -6,11 +6,18 @@ import MenuItem from '@mui/material/MenuItem';
 import ExpandLess from '@mui/icons-material/ExpandLessSharp';
 import ExpandMore from '@mui/icons-material/ExpandMoreSharp';
 
+interface NestedMenuProps {
+  children: React.ReactElement;
+  icon?: React.ReactElement | null;
+  label: string;
+  [key: string]: any;
+}
+
 /**
  * NestedMenu ~ A presentation component to render a menu item and have
  * it control the visibility of the MUI List passed in as the children
  */
-export function NestedMenu({ children, icon = null, label, ...otherProps }) {
+export function NestedMenu({ children, icon = null, label, ...otherProps }: NestedMenuProps) {
   const [nestedMenuIsOpen, setNestedMenuIsOpen] = useState(false);
 
   const handleMenuClick = useCallback(() => {

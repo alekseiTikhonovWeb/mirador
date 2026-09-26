@@ -7,10 +7,17 @@ import Typography from '@mui/material/Typography';
 import ListSharpIcon from '@mui/icons-material/ListSharp';
 import { useTranslation } from 'react-i18next';
 
+interface SelectCollectionProps {
+  collectionPath?: string[];
+  manifestId?: string | null;
+  showCollectionDialog: (manifestId: string | null, collectionPath: string[], windowId: string | null) => void;
+  windowId?: string | null;
+}
+
 /**
  *
  */
-export function SelectCollection({ collectionPath = [], manifestId = null, showCollectionDialog, windowId = null }) {
+export function SelectCollection({ collectionPath = [], manifestId = null, showCollectionDialog, windowId = null }: SelectCollectionProps) {
   const { t } = useTranslation();
   const openCollectionDialog = useCallback(() => {
     showCollectionDialog(manifestId, collectionPath.slice(0, -1), windowId);

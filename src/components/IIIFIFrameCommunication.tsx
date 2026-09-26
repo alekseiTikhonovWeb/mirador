@@ -7,14 +7,19 @@ const IIIFIFrameCommunicationDefaultProps = {
   height: 1,
   name: undefined,
   scrolling: undefined,
-  style: { visibility: 'hidden' },
+  style: { visibility: 'hidden' as const },
   width: 1,
 };
+
+interface IIIFIFrameCommunicationProps extends React.IframeHTMLAttributes<HTMLIFrameElement> {
+  handleReceiveMessage?: ((event: MessageEvent) => void) | undefined;
+  src: string;
+}
 
 /**
  *  Handle IIIF Auth token validation using iframe message events
  */
-export function IIIFIFrameCommunication({ handleReceiveMessage = undefined, ...props }) {
+export function IIIFIFrameCommunication({ handleReceiveMessage = undefined, ...props }: IIIFIFrameCommunicationProps) {
   // Attaches the 'message' event listener to the window.
   useEffect(() => {
     if (!handleReceiveMessage) return undefined;

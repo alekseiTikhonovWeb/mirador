@@ -7,9 +7,19 @@ import Button from '@mui/material/Button';
 import { useTranslation } from 'react-i18next';
 import isUndefined from 'lodash/isUndefined';
 
+interface ErrorShape {
+  id?: string;
+  message?: string;
+}
+
+interface ErrorDialogProps {
+  error?: ErrorShape | null;
+  removeError?: (id: string | undefined) => void;
+}
+
 /**
  */
-export function ErrorDialog({ error = null, removeError = () => {} }) {
+export function ErrorDialog({ error = null, removeError = () => {} }: ErrorDialogProps) {
   const { t } = useTranslation();
   const hasError = !isUndefined(error);
 

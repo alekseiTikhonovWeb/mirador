@@ -5,11 +5,17 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 
+interface ManifestListItemErrorProps {
+  manifestId: string;
+  onDismissClick: (manifestId: string) => void;
+  onTryAgainClick: (manifestId: string) => void;
+}
+
 /**
  * ManifestListItemError renders a component displaying a
  * message to the user about a problem loading a manifest
  */
-export function ManifestListItemError({ manifestId, onDismissClick, onTryAgainClick }) {
+export function ManifestListItemError({ manifestId, onDismissClick, onTryAgainClick }: ManifestListItemErrorProps) {
   const { t } = useTranslation();
   return (
     <Grid container sx={{ alignItems: 'center', width: '100%' }}>

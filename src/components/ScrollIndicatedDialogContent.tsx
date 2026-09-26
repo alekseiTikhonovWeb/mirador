@@ -2,10 +2,16 @@ import PropTypes from 'prop-types';
 import DialogContent from '@mui/material/DialogContent';
 import { alpha, styled } from '@mui/material/styles';
 
+interface ScrollIndicatedDialogContentProps {
+  classes?: { shadowScrollDialog?: string };
+  className?: string;
+  [key: string]: any;
+}
+
 /**
  * From https://github.com/mui/material-ui/blob/v5.15.0/packages/mui-material/src/styles/getOverlayAlpha.ts
  */
-const getOverlayAlpha = (elevation) => {
+const getOverlayAlpha = (elevation: number) => {
   let alphaValue;
   if (elevation < 1) {
     alphaValue = 5.11916 * elevation ** 2;
@@ -15,7 +21,7 @@ const getOverlayAlpha = (elevation) => {
   return (alphaValue / 100).toFixed(2);
 };
 
-const Root = styled(DialogContent, { name: 'ScrollIndicatedDialogContent', slot: 'root' })(({ ownerState, theme }) => {
+const Root = styled(DialogContent, { name: 'ScrollIndicatedDialogContent', slot: 'root' })(({ ownerState, theme }: { ownerState?: { elevation?: number }; theme: any }) => {
   // In dark mode, paper has a elevation-dependent background color:
   // https://github.com/mui/material-ui/blob/v5.15.0/packages/mui-material/src/Paper/Paper.js#L55-L60
   const bgcolor =
@@ -23,8 +29,8 @@ const Root = styled(DialogContent, { name: 'ScrollIndicatedDialogContent', slot:
       ? {
           backgroundImage: `linear-gradient(${alpha(
             '#fff',
-            getOverlayAlpha(ownerState?.elevation || 24),
-          )}, ${alpha('#fff', getOverlayAlpha(ownerState?.elevation || 24))})`,
+            getOverlayAlpha(ownerState?.elevation || 24) as unknown as number,
+          )}, ${alpha('#fff', getOverlayAlpha(ownerState?.elevation || 24) as unknown as number)})`,
         }
       : theme.palette.background.paper;
   return {
@@ -46,7 +52,7 @@ const Root = styled(DialogContent, { name: 'ScrollIndicatedDialogContent', slot:
  * ScrollIndicatedDialogContent ~ Inject a style into the DialogContent component
  *                                to indicate there is scrollable content
  */
-export function ScrollIndicatedDialogContent({ classes = {}, className = '', ...otherProps }) {
+export function ScrollIndicatedDialogContent({ classes = {}, className = '', ...otherProps }: ScrollIndicatedDialogContentProps) {
   const ourClassName = [className, classes.shadowScrollDialog].join(' ');
 
   return <Root className={ourClassName} {...otherProps} />;

@@ -5,11 +5,18 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import { useTranslation } from 'react-i18next';
 
+interface ManifestFormProps {
+  addResource: (url: string) => void;
+  addResourcesOpen: boolean;
+  onCancel?: (() => void) | null;
+  onSubmit?: () => void;
+}
+
 /**
  * Provides a form for user input of a manifest url
  * @prop {Function} addResource
  */
-export function ManifestForm({ addResourcesOpen, addResource, onSubmit = () => {}, onCancel = null }) {
+export function ManifestForm({ addResourcesOpen, addResource, onSubmit = () => {}, onCancel = null }: ManifestFormProps) {
   const { t } = useTranslation();
   const [formValue, setFormValue] = useState('');
 
@@ -20,13 +27,13 @@ export function ManifestForm({ addResourcesOpen, addResource, onSubmit = () => {
   };
 
   /** */
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     setFormValue(event.target.value);
   };
 
   /** */
-  const formSubmit = (event) => {
+  const formSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     addResource(formValue);
     onSubmit();
@@ -53,7 +60,7 @@ export function ManifestForm({ addResourcesOpen, addResource, onSubmit = () => {
             slotProps={{
               inputLabel: { shrink: true },
               inputProps: { style: { typography: 'body1' } },
-            }}
+            } as any}
           />
         </Grid>
         {onCancel && (
