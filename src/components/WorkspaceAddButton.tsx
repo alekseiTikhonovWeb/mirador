@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import Fab from '@mui/material/Fab';
 import Tooltip from '@mui/material/Tooltip';
 import AddIcon from '@mui/icons-material/AddSharp';
@@ -20,7 +19,7 @@ function useWidth() {
       // eslint-disable-next-line react-hooks/rules-of-hooks
       const matches = useMediaQuery(theme.breakpoints.up(key));
       return !output && matches ? key : output;
-    }, null) || 'xs'
+    }, null as string | null) || 'xs'
   );
 }
 
@@ -36,9 +35,15 @@ const Root = styled(Fab, { name: 'WorkspaceAddButton', slot: 'root' })(({ theme 
   }),
 }));
 
+interface WorkspaceAddButtonProps {
+  setWorkspaceAddVisibility: (visible: boolean) => void;
+  isWorkspaceAddVisible?: boolean;
+  useExtendedFab: boolean;
+}
+
 /**
  */
-export function WorkspaceAddButton({ setWorkspaceAddVisibility, isWorkspaceAddVisible = false, useExtendedFab }) {
+export function WorkspaceAddButton({ setWorkspaceAddVisibility, isWorkspaceAddVisible = false, useExtendedFab }: WorkspaceAddButtonProps) {
   const width = useWidth();
   const { t } = useTranslation();
 
@@ -65,9 +70,3 @@ export function WorkspaceAddButton({ setWorkspaceAddVisibility, isWorkspaceAddVi
     </Tooltip>
   );
 }
-
-WorkspaceAddButton.propTypes = {
-  isWorkspaceAddVisible: PropTypes.bool,
-  setWorkspaceAddVisibility: PropTypes.func.isRequired,
-  useExtendedFab: PropTypes.bool.isRequired,
-};

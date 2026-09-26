@@ -1,22 +1,16 @@
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import type { TypographyProps } from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import ErrorIcon from '@mui/icons-material/ErrorOutlineSharp';
 
-const StyledTitleTypography = styled(TitleTypography)(({ theme }) => ({
-  ...theme.typography.h6,
-  flexGrow: 1,
-  paddingLeft: theme.spacing(0.5),
-}));
+interface TitleTypographyProps extends TypographyProps {
+  children: React.ReactNode;
+  sx?: TypographyProps['sx'];
+}
 
-const StyledTitle = styled('div')(({ theme }) => ({
-  ...theme.typography.h6,
-  flexGrow: 1,
-  paddingLeft: theme.spacing(0.5),
-}));
 /** */
-function TitleTypography({ children, ...props }) {
+function TitleTypography({ children, ...props }: TitleTypographyProps) {
   return (
     <Typography
       variant="h2"
@@ -34,15 +28,29 @@ function TitleTypography({ children, ...props }) {
   );
 }
 
-TitleTypography.propTypes = {
-  children: PropTypes.node.isRequired,
-  sx: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.object), PropTypes.object]),
-};
+const StyledTitleTypography = styled(TitleTypography)(({ theme }) => ({
+  ...theme.typography.h6,
+  flexGrow: 1,
+  paddingLeft: theme.spacing(0.5),
+}));
+
+const StyledTitle = styled('div')(({ theme }) => ({
+  ...theme.typography.h6,
+  flexGrow: 1,
+  paddingLeft: theme.spacing(0.5),
+}));
+
+interface WindowTopBarTitleProps {
+  error?: string | null;
+  hideWindowTitle?: boolean;
+  isFetching?: boolean;
+  manifestTitle?: string;
+}
 
 /**
  * WindowTopBarTitle
  */
-export function WindowTopBarTitle({ error = null, hideWindowTitle = false, isFetching = false, manifestTitle = '' }) {
+export function WindowTopBarTitle({ error = null, hideWindowTitle = false, isFetching = false, manifestTitle = '' }: WindowTopBarTitleProps) {
   let title;
   if (isFetching) {
     title = (
@@ -64,10 +72,3 @@ export function WindowTopBarTitle({ error = null, hideWindowTitle = false, isFet
   }
   return title;
 }
-
-WindowTopBarTitle.propTypes = {
-  error: PropTypes.string,
-  hideWindowTitle: PropTypes.bool,
-  isFetching: PropTypes.bool,
-  manifestTitle: PropTypes.string,
-};

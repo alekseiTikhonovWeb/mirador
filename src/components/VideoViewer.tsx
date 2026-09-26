@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 
 const StyledContainer = styled('div')(() => ({
@@ -12,8 +11,14 @@ const StyledVideo = styled('video')(() => ({
   width: '100%',
 }));
 
+interface VideoViewerProps {
+  captions?: any[];
+  videoOptions?: React.VideoHTMLAttributes<HTMLVideoElement>;
+  videoResources?: any[];
+}
+
 /** */
-export function VideoViewer({ captions = [], videoOptions = {}, videoResources = [] }) {
+export function VideoViewer({ captions = [], videoOptions = {}, videoResources = [] }: VideoViewerProps) {
   return (
     <StyledContainer>
       <StyledVideo {...videoOptions}>
@@ -27,9 +32,3 @@ export function VideoViewer({ captions = [], videoOptions = {}, videoResources =
     </StyledContainer>
   );
 }
-
-VideoViewer.propTypes = {
-  captions: PropTypes.arrayOf(PropTypes.object),
-  videoOptions: PropTypes.object,
-  videoResources: PropTypes.arrayOf(PropTypes.object),
-};

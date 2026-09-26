@@ -1,9 +1,9 @@
-import SvgIcon from '@mui/material/SvgIcon';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 
 /**
  * ThumbnailNavigationRightIcon ~
  */
-export default function MiradorIcon(props) {
+export default function MiradorIcon(props: SvgIconProps) {
   return (
     <SvgIcon viewBox="0 0 60 55" {...props}>
       <rect width="18" height="55" />

@@ -1,9 +1,10 @@
 import SvgIcon from '@mui/material/SvgIcon';
+import type { SvgIconProps } from '@mui/material/SvgIcon';
 
 /**
  * BookViewIcon ~
  */
-export default function BookViewIcon(props) {
+export default function BookViewIcon(props: SvgIconProps) {
   return (
     <SvgIcon {...props}>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

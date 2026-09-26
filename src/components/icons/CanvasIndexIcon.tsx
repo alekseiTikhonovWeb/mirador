@@ -1,9 +1,9 @@
-import SvgIcon from '@mui/material/SvgIcon';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 
 /**
  * Render the canvas index svg
  */
-export default function CanvasIndexIcon(props) {
+export default function CanvasIndexIcon(props: SvgIconProps) {
   return (
     <SvgIcon {...props}>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

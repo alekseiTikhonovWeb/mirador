@@ -3,7 +3,7 @@
   "repo": "github.com/alekseiTikhonovWeb/mirador",
   "src": "src",
   "startedAt": "2026-09-26T19:33:06.670Z",
-  "updatedAt": "2026-09-26T19:56:01.079Z",
+  "updatedAt": "2026-09-26T20:18:56.999Z",
   "graph": {
     "layers": [
       [
@@ -19,18 +19,18 @@
         "src/components/NewBrowserWindow.tsx",
         "src/components/ScrollIndicatedDialogContent.tsx",
         "src/components/SelectCollection.tsx",
-        "src/components/SidebarIndexItem.jsx",
-        "src/components/VideoViewer.jsx",
-        "src/components/WindowTopBarTitle.jsx",
-        "src/components/WorkspaceAddButton.jsx",
-        "src/components/WorkspaceDialog.jsx",
-        "src/components/icons/BookViewIcon.jsx",
-        "src/components/icons/CanvasIndexIcon.jsx",
-        "src/components/icons/GalleryViewIcon.jsx",
-        "src/components/icons/MiradorIcon.jsx",
-        "src/components/icons/RestoreZoomIcon.jsx",
-        "src/components/icons/ThumbnailNavigationBottomIcon.jsx",
-        "src/components/icons/ThumbnailNavigationRightIcon.jsx",
+        "src/components/SidebarIndexItem.tsx",
+        "src/components/VideoViewer.tsx",
+        "src/components/WindowTopBarTitle.tsx",
+        "src/components/WorkspaceAddButton.tsx",
+        "src/components/WorkspaceDialog.tsx",
+        "src/components/icons/BookViewIcon.tsx",
+        "src/components/icons/CanvasIndexIcon.tsx",
+        "src/components/icons/GalleryViewIcon.tsx",
+        "src/components/icons/MiradorIcon.tsx",
+        "src/components/icons/RestoreZoomIcon.tsx",
+        "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
+        "src/components/icons/ThumbnailNavigationRightIcon.tsx",
         "src/components/icons/WindowMaxIcon.jsx",
         "src/components/icons/WindowMinIcon.jsx",
         "src/components/icons/WindowOptionsIcon.jsx",
@@ -487,7 +487,7 @@
       "src/components/Branding.jsx": {
         "lines": 34,
         "imports": [
-          "src/components/icons/MiradorIcon.jsx"
+          "src/components/icons/MiradorIcon.tsx"
         ]
       },
       "src/components/CanvasAnnotations.jsx": {
@@ -517,7 +517,7 @@
       "src/components/ChangeThemeDialog.jsx": {
         "lines": 66,
         "imports": [
-          "src/components/WorkspaceDialog.jsx"
+          "src/components/WorkspaceDialog.tsx"
         ]
       },
       "src/components/CollapsibleSection.tsx": {
@@ -842,8 +842,8 @@
         "lines": 52,
         "imports": []
       },
-      "src/components/SidebarIndexItem.jsx": {
-        "lines": 12,
+      "src/components/SidebarIndexItem.tsx": {
+        "lines": 11,
         "imports": []
       },
       "src/components/SidebarIndexList.jsx": {
@@ -888,8 +888,8 @@
           "src/hooks/index.js"
         ]
       },
-      "src/components/VideoViewer.jsx": {
-        "lines": 36,
+      "src/components/VideoViewer.tsx": {
+        "lines": 35,
         "imports": []
       },
       "src/components/ViewerInfo.jsx": {
@@ -967,7 +967,7 @@
       "src/components/WindowSideBarButtons.jsx": {
         "lines": 152,
         "imports": [
-          "src/components/icons/CanvasIndexIcon.jsx",
+          "src/components/icons/CanvasIndexIcon.tsx",
           "src/extend/usePlugins.js"
         ]
       },
@@ -1004,8 +1004,8 @@
       "src/components/WindowThumbnailSettings.jsx": {
         "lines": 131,
         "imports": [
-          "src/components/icons/ThumbnailNavigationBottomIcon.jsx",
-          "src/components/icons/ThumbnailNavigationRightIcon.jsx"
+          "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
+          "src/components/icons/ThumbnailNavigationRightIcon.tsx"
         ]
       },
       "src/components/WindowTopBar.jsx": {
@@ -1037,8 +1037,8 @@
           "src/extend/usePlugins.js"
         ]
       },
-      "src/components/WindowTopBarTitle.jsx": {
-        "lines": 74,
+      "src/components/WindowTopBarTitle.tsx": {
+        "lines": 75,
         "imports": []
       },
       "src/components/WindowTopMenu.jsx": {
@@ -1063,8 +1063,8 @@
       "src/components/WindowViewSettings.jsx": {
         "lines": 96,
         "imports": [
-          "src/components/icons/BookViewIcon.jsx",
-          "src/components/icons/GalleryViewIcon.jsx"
+          "src/components/icons/BookViewIcon.tsx",
+          "src/components/icons/GalleryViewIcon.tsx"
         ]
       },
       "src/components/WindowViewer.jsx": {
@@ -1095,8 +1095,8 @@
           "src/containers/MiradorMenuButton.js"
         ]
       },
-      "src/components/WorkspaceAddButton.jsx": {
-        "lines": 74,
+      "src/components/WorkspaceAddButton.tsx": {
+        "lines": 73,
         "imports": []
       },
       "src/components/WorkspaceArea.jsx": {
@@ -1129,8 +1129,8 @@
           "src/containers/WorkspaceOptionsButton.js"
         ]
       },
-      "src/components/WorkspaceDialog.jsx": {
-        "lines": 12,
+      "src/components/WorkspaceDialog.tsx": {
+        "lines": 16,
         "imports": []
       },
       "src/components/WorkspaceElastic.jsx": {
@@ -1150,13 +1150,13 @@
       "src/components/WorkspaceExport.jsx": {
         "lines": 100,
         "imports": [
-          "src/components/WorkspaceDialog.jsx"
+          "src/components/WorkspaceDialog.tsx"
         ]
       },
       "src/components/WorkspaceImport.jsx": {
         "lines": 90,
         "imports": [
-          "src/components/WorkspaceDialog.jsx",
+          "src/components/WorkspaceDialog.tsx",
           "src/containers/ScrollIndicatedDialogContent.js"
         ]
       },
@@ -1206,7 +1206,7 @@
       "src/components/WorkspaceSelectionDialog.jsx": {
         "lines": 166,
         "imports": [
-          "src/components/WorkspaceDialog.jsx",
+          "src/components/WorkspaceDialog.tsx",
           "src/components/icons/WorkspaceTypeElasticIcon.jsx",
           "src/components/icons/WorkspaceTypeMosaicIcon.jsx",
           "src/containers/ScrollIndicatedDialogContent.js"
@@ -1215,35 +1215,35 @@
       "src/components/ZoomControls.jsx": {
         "lines": 58,
         "imports": [
-          "src/components/icons/RestoreZoomIcon.jsx",
+          "src/components/icons/RestoreZoomIcon.tsx",
           "src/containers/MiradorMenuButton.js"
         ]
       },
-      "src/components/icons/BookViewIcon.jsx": {
+      "src/components/icons/BookViewIcon.tsx": {
+        "lines": 16,
+        "imports": []
+      },
+      "src/components/icons/CanvasIndexIcon.tsx": {
         "lines": 15,
         "imports": []
       },
-      "src/components/icons/CanvasIndexIcon.jsx": {
-        "lines": 15,
-        "imports": []
-      },
-      "src/components/icons/GalleryViewIcon.jsx": {
+      "src/components/icons/GalleryViewIcon.tsx": {
         "lines": 18,
         "imports": []
       },
-      "src/components/icons/MiradorIcon.jsx": {
+      "src/components/icons/MiradorIcon.tsx": {
         "lines": 15,
         "imports": []
       },
-      "src/components/icons/RestoreZoomIcon.jsx": {
+      "src/components/icons/RestoreZoomIcon.tsx": {
         "lines": 16,
         "imports": []
       },
-      "src/components/icons/ThumbnailNavigationBottomIcon.jsx": {
+      "src/components/icons/ThumbnailNavigationBottomIcon.tsx": {
         "lines": 16,
         "imports": []
       },
-      "src/components/icons/ThumbnailNavigationRightIcon.jsx": {
+      "src/components/icons/ThumbnailNavigationRightIcon.tsx": {
         "lines": 17,
         "imports": []
       },
@@ -1270,13 +1270,13 @@
       "src/components/icons/index.js": {
         "lines": 28,
         "imports": [
-          "src/components/icons/BookViewIcon.jsx",
-          "src/components/icons/CanvasIndexIcon.jsx",
-          "src/components/icons/GalleryViewIcon.jsx",
-          "src/components/icons/MiradorIcon.jsx",
-          "src/components/icons/RestoreZoomIcon.jsx",
-          "src/components/icons/ThumbnailNavigationBottomIcon.jsx",
-          "src/components/icons/ThumbnailNavigationRightIcon.jsx",
+          "src/components/icons/BookViewIcon.tsx",
+          "src/components/icons/CanvasIndexIcon.tsx",
+          "src/components/icons/GalleryViewIcon.tsx",
+          "src/components/icons/MiradorIcon.tsx",
+          "src/components/icons/RestoreZoomIcon.tsx",
+          "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
+          "src/components/icons/ThumbnailNavigationRightIcon.tsx",
           "src/components/icons/WindowMaxIcon.jsx",
           "src/components/icons/WindowMinIcon.jsx",
           "src/components/icons/WindowOptionsIcon.jsx",
@@ -1344,14 +1344,14 @@
           "src/components/SearchPanelNavigation.jsx",
           "src/components/SearchResults.jsx",
           "src/components/SelectCollection.tsx",
-          "src/components/SidebarIndexItem.jsx",
+          "src/components/SidebarIndexItem.tsx",
           "src/components/SidebarIndexList.jsx",
           "src/components/SidebarIndexTableOfContents.jsx",
           "src/components/SidebarIndexThumbnail.jsx",
           "src/components/TextViewer.jsx",
           "src/components/ThumbnailCanvasGrouping.jsx",
           "src/components/ThumbnailNavigation.jsx",
-          "src/components/VideoViewer.jsx",
+          "src/components/VideoViewer.tsx",
           "src/components/ViewerInfo.jsx",
           "src/components/ViewerNavigation.jsx",
           "src/components/Window.jsx",
@@ -1369,18 +1369,18 @@
           "src/components/WindowTopBar.jsx",
           "src/components/WindowTopBarPluginArea.jsx",
           "src/components/WindowTopBarPluginMenu.jsx",
-          "src/components/WindowTopBarTitle.jsx",
+          "src/components/WindowTopBarTitle.tsx",
           "src/components/WindowTopMenu.jsx",
           "src/components/WindowTopMenuButton.jsx",
           "src/components/WindowViewSettings.jsx",
           "src/components/WindowViewer.jsx",
           "src/components/Workspace.jsx",
           "src/components/WorkspaceAdd.jsx",
-          "src/components/WorkspaceAddButton.jsx",
+          "src/components/WorkspaceAddButton.tsx",
           "src/components/WorkspaceArea.jsx",
           "src/components/WorkspaceControlPanel.jsx",
           "src/components/WorkspaceControlPanelButtons.jsx",
-          "src/components/WorkspaceDialog.jsx",
+          "src/components/WorkspaceDialog.tsx",
           "src/components/WorkspaceElastic.jsx",
           "src/components/WorkspaceElasticWindow.jsx",
           "src/components/WorkspaceExport.jsx",
@@ -1798,7 +1798,7 @@
       "src/containers/SidebarIndexItem.js": {
         "lines": 9,
         "imports": [
-          "src/components/SidebarIndexItem.jsx",
+          "src/components/SidebarIndexItem.tsx",
           "src/extend/withPlugins.jsx"
         ]
       },
@@ -1857,7 +1857,7 @@
       "src/containers/VideoViewer.js": {
         "lines": 17,
         "imports": [
-          "src/components/VideoViewer.jsx",
+          "src/components/VideoViewer.tsx",
           "src/extend/withPlugins.jsx",
           "src/state/selectors/index.js"
         ]
@@ -2008,7 +2008,7 @@
       "src/containers/WindowTopBarTitle.js": {
         "lines": 18,
         "imports": [
-          "src/components/WindowTopBarTitle.jsx",
+          "src/components/WindowTopBarTitle.tsx",
           "src/extend/withPlugins.jsx",
           "src/state/selectors/index.js"
         ]
@@ -2066,7 +2066,7 @@
       "src/containers/WorkspaceAddButton.js": {
         "lines": 31,
         "imports": [
-          "src/components/WorkspaceAddButton.jsx",
+          "src/components/WorkspaceAddButton.tsx",
           "src/extend/withPlugins.jsx",
           "src/state/actions/index.js",
           "src/state/selectors/index.js"
@@ -3053,8 +3053,8 @@
     },
     "stats": {
       "files": 329,
-      "jsFiles": 317,
-      "tsFiles": 12,
+      "jsFiles": 305,
+      "tsFiles": 24,
       "edges": 1038,
       "layers": 42,
       "cycleFiles": 0
@@ -3063,11 +3063,13 @@
   "ratchet": {
     "js": [
       329,
-      317
+      317,
+      305
     ],
     "any": [
       0,
-      7
+      7,
+      9
     ]
   },
   "batches": [
@@ -3386,6 +3388,149 @@
       "ratchet": {
         "js": 317,
         "any": 7
+      }
+    },
+    {
+      "id": "b02",
+      "layer": 0,
+      "files": [
+        "src/components/SidebarIndexItem.jsx",
+        "src/components/VideoViewer.jsx",
+        "src/components/WindowTopBarTitle.jsx",
+        "src/components/WorkspaceAddButton.jsx",
+        "src/components/WorkspaceDialog.jsx",
+        "src/components/icons/BookViewIcon.jsx",
+        "src/components/icons/CanvasIndexIcon.jsx",
+        "src/components/icons/GalleryViewIcon.jsx",
+        "src/components/icons/MiradorIcon.jsx",
+        "src/components/icons/RestoreZoomIcon.jsx",
+        "src/components/icons/ThumbnailNavigationBottomIcon.jsx",
+        "src/components/icons/ThumbnailNavigationRightIcon.jsx"
+      ],
+      "status": "done",
+      "startedAt": "2026-09-26T20:09:21.190Z",
+      "attempts": 1,
+      "checks": {
+        "typecheck": {
+          "ok": true,
+          "errors": 0
+        },
+        "tests": {
+          "ok": true,
+          "passed": 11,
+          "failed": 0
+        }
+      },
+      "finishedAt": "2026-09-26T20:18:56.995Z",
+      "durationSec": 576,
+      "semantic": [
+        {
+          "file": "src/components/SidebarIndexItem.tsx",
+          "kind": "interface",
+          "symbol": "SidebarIndexItemProps",
+          "note": "label: string (required)"
+        },
+        {
+          "file": "src/components/VideoViewer.tsx",
+          "kind": "interface",
+          "symbol": "VideoViewerProps",
+          "note": "captions?: any[], videoResources?: any[], videoOptions?: React.VideoHTMLAttributes<HTMLVideoElement>"
+        },
+        {
+          "file": "src/components/VideoViewer.tsx",
+          "kind": "any",
+          "symbol": "VideoViewerProps.captions",
+          "note": "any[] — IIIF resource shape unknown"
+        },
+        {
+          "file": "src/components/VideoViewer.tsx",
+          "kind": "any",
+          "symbol": "VideoViewerProps.videoResources",
+          "note": "any[] — IIIF resource shape unknown"
+        },
+        {
+          "file": "src/components/WindowTopBarTitle.tsx",
+          "kind": "interface",
+          "symbol": "TitleTypographyProps",
+          "note": "extends TypographyProps; children: React.ReactNode, sx?: TypographyProps['sx']"
+        },
+        {
+          "file": "src/components/WindowTopBarTitle.tsx",
+          "kind": "interface",
+          "symbol": "WindowTopBarTitleProps",
+          "note": "error?: string | null, hideWindowTitle?: boolean, isFetching?: boolean, manifestTitle?: string"
+        },
+        {
+          "file": "src/components/WindowTopBarTitle.tsx",
+          "kind": "nullable",
+          "symbol": "error",
+          "note": "string | null — default in source was null"
+        },
+        {
+          "file": "src/components/WorkspaceAddButton.tsx",
+          "kind": "cast",
+          "symbol": "useWidth reduce seed",
+          "note": "null as string | null — enables correct return-type inference"
+        },
+        {
+          "file": "src/components/WorkspaceAddButton.tsx",
+          "kind": "interface",
+          "symbol": "WorkspaceAddButtonProps",
+          "note": "setWorkspaceAddVisibility: (visible: boolean) => void, isWorkspaceAddVisible?: boolean, useExtendedFab: boolean"
+        },
+        {
+          "file": "src/components/WorkspaceDialog.tsx",
+          "kind": "interface",
+          "symbol": "WorkspaceDialogProps",
+          "note": "variant?: 'menu' | string"
+        },
+        {
+          "file": "src/components/icons/BookViewIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/CanvasIndexIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/GalleryViewIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/MiradorIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/RestoreZoomIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        },
+        {
+          "file": "src/components/icons/ThumbnailNavigationRightIcon.tsx",
+          "kind": "type",
+          "symbol": "props",
+          "note": "SvgIconProps"
+        }
+      ],
+      "session": "bob_sessions/b02.json",
+      "ratchet": {
+        "js": 305,
+        "any": 9
       }
     }
   ]
