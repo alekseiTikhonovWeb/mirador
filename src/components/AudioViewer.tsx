@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 
 const StyledContainer = styled('div')({
@@ -12,8 +11,16 @@ const StyledAudio = styled('audio')({
   width: '100%',
 });
 
+interface AudioViewerProps {
+  audioOptions?: React.ComponentPropsWithoutRef<'audio'>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  audioResources?: any[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  captions?: any[];
+}
+
 /** */
-export function AudioViewer({ audioOptions = {}, audioResources = [], captions = [] }) {
+export function AudioViewer({ audioOptions = {}, audioResources = [], captions = [] }: AudioViewerProps) {
   return (
     <StyledContainer>
       <StyledAudio {...audioOptions}>
@@ -31,9 +38,3 @@ export function AudioViewer({ audioOptions = {}, audioResources = [], captions =
     </StyledContainer>
   );
 }
-
-AudioViewer.propTypes = {
-  audioOptions: PropTypes.object,
-  audioResources: PropTypes.arrayOf(PropTypes.object),
-  captions: PropTypes.arrayOf(PropTypes.object),
-};

@@ -1,16 +1,17 @@
 import { useState, useCallback } from 'react';
-import PropTypes from 'prop-types';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import ExpandLess from '@mui/icons-material/ExpandLessSharp';
 import ExpandMore from '@mui/icons-material/ExpandMoreSharp';
 
-/**
- * NestedMenu ~ A presentation component to render a menu item and have
- * it control the visibility of the MUI List passed in as the children
- */
-export function NestedMenu({ children, icon = null, label, ...otherProps }) {
+interface NestedMenuProps extends Omit<React.ComponentPropsWithoutRef<typeof MenuItem>, 'children' | 'icon'> {
+  children: React.ReactElement;
+  icon?: React.ReactElement | null;
+  label: string;
+}
+
+export function NestedMenu({ children, icon = null, label, ...otherProps }: NestedMenuProps) {
   const [nestedMenuIsOpen, setNestedMenuIsOpen] = useState(false);
 
   const handleMenuClick = useCallback(() => {
@@ -21,11 +22,7 @@ export function NestedMenu({ children, icon = null, label, ...otherProps }) {
     <>
       <MenuItem aria-expanded={nestedMenuIsOpen} onClick={handleMenuClick} divider={nestedMenuIsOpen} {...otherProps}>
         {icon && <ListItemIcon>{icon}</ListItemIcon>}
-        <ListItemText
-          slotProps={{
-            primary: { variant: 'body1' },
-          }}
-        >
+        <ListItemText slotProps={{ primary: { variant: 'body1' } }}>
           {label}
         </ListItemText>
         {nestedMenuIsOpen ? <ExpandLess /> : <ExpandMore />}
@@ -34,9 +31,3 @@ export function NestedMenu({ children, icon = null, label, ...otherProps }) {
     </>
   );
 }
-
-NestedMenu.propTypes = {
-  children: PropTypes.element.isRequired,
-  icon: PropTypes.element,
-  label: PropTypes.string.isRequired,
-};

@@ -1,8 +1,14 @@
 import { useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-/** */
-export function NewBrowserWindow({ depWindow = undefined, features = undefined, name = undefined, onClose, url }) {
+interface NewBrowserWindowProps {
+  depWindow?: Window | undefined;
+  features?: string | undefined;
+  name?: string | undefined;
+  onClose: (url: string) => void;
+  url: string;
+}
+
+export function NewBrowserWindow({ depWindow = undefined, features = undefined, name = undefined, onClose, url }: NewBrowserWindowProps) {
   const released = useRef(false);
 
   useEffect(() => {
@@ -24,11 +30,3 @@ export function NewBrowserWindow({ depWindow = undefined, features = undefined, 
 
   return null;
 }
-
-NewBrowserWindow.propTypes = {
-  depWindow: PropTypes.object,
-  features: PropTypes.string,
-  name: PropTypes.string,
-  onClose: PropTypes.func.isRequired,
-  url: PropTypes.string.isRequired,
-};
