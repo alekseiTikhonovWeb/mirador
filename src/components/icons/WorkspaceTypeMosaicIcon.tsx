@@ -1,9 +1,9 @@
-import SvgIcon from '@mui/material/SvgIcon';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 
 /**
  * WorkspaceTypeMosaicIcon ~
  */
-export default function WorkspaceTypeMosaicIcon(props) {
+export default function WorkspaceTypeMosaicIcon(props: SvgIconProps) {
   return (
     <SvgIcon {...props}>
       <svg xmlns="http://www.w3.org/2000/svg" width="120" height="90" viewBox="0 0 300 225">

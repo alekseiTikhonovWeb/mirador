@@ -3,7 +3,7 @@
   "repo": "github.com/alekseiTikhonovWeb/mirador",
   "src": "src",
   "startedAt": "2026-09-26T19:33:06.670Z",
-  "updatedAt": "2026-09-26T20:52:45.677Z",
+  "updatedAt": "2026-09-26T21:01:44.225Z",
   "graph": {
     "layers": [
       [
@@ -31,18 +31,18 @@
         "src/components/icons/RestoreZoomIcon.tsx",
         "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
         "src/components/icons/ThumbnailNavigationRightIcon.tsx",
-        "src/components/icons/WindowMaxIcon.jsx",
-        "src/components/icons/WindowMinIcon.jsx",
-        "src/components/icons/WindowOptionsIcon.jsx",
-        "src/components/icons/WorkspaceTypeElasticIcon.jsx",
-        "src/components/icons/WorkspaceTypeMosaicIcon.jsx",
-        "src/config/settings.js",
-        "src/contexts/FailedImageContext.js",
-        "src/contexts/FullScreenContext.js",
-        "src/contexts/LocaleContext.js",
-        "src/contexts/OpenSeadragonViewerContext.js",
-        "src/contexts/WorkspaceContext.js",
-        "src/extend/PluginContext.js",
+        "src/components/icons/WindowMaxIcon.tsx",
+        "src/components/icons/WindowMinIcon.tsx",
+        "src/components/icons/WindowOptionsIcon.tsx",
+        "src/components/icons/WorkspaceTypeElasticIcon.tsx",
+        "src/components/icons/WorkspaceTypeMosaicIcon.tsx",
+        "src/config/settings.ts",
+        "src/contexts/FailedImageContext.ts",
+        "src/contexts/FullScreenContext.ts",
+        "src/contexts/LocaleContext.ts",
+        "src/contexts/OpenSeadragonViewerContext.ts",
+        "src/contexts/WorkspaceContext.ts",
+        "src/extend/PluginContext.ts",
         "src/extend/pluginValidation.ts",
         "src/i18n.ts",
         "src/lib/AnnotationItem.ts",
@@ -448,7 +448,7 @@
         "imports": [
           "src/containers/AppProviders.js",
           "src/containers/WorkspaceArea.js",
-          "src/contexts/WorkspaceContext.js",
+          "src/contexts/WorkspaceContext.ts",
           "src/extend/PluginProvider.jsx"
         ]
       },
@@ -456,8 +456,8 @@
         "lines": 130,
         "imports": [
           "src/contexts/FailedImageProvider.jsx",
-          "src/contexts/FullScreenContext.js",
-          "src/contexts/LocaleContext.js",
+          "src/contexts/FullScreenContext.ts",
+          "src/contexts/LocaleContext.ts",
           "src/i18n.ts",
           "src/lib/FullScreenHandle.tsx"
         ]
@@ -532,7 +532,7 @@
           "src/containers/LabelValueMetadata.js",
           "src/containers/ManifestInfo.js",
           "src/containers/ScrollIndicatedDialogContent.js",
-          "src/contexts/WorkspaceContext.js",
+          "src/contexts/WorkspaceContext.ts",
           "src/lib/asArray.ts"
         ]
       },
@@ -555,7 +555,7 @@
         "imports": [
           "src/config/css-ns.js",
           "src/containers/MiradorMenuButton.js",
-          "src/contexts/LocaleContext.js",
+          "src/contexts/LocaleContext.ts",
           "src/state/selectors/companionWindows.js"
         ]
       },
@@ -591,7 +591,7 @@
         "lines": 48,
         "imports": [
           "src/containers/MiradorMenuButton.js",
-          "src/contexts/FullScreenContext.js"
+          "src/contexts/FullScreenContext.ts"
         ]
       },
       "src/components/GalleryView.jsx": {
@@ -628,7 +628,7 @@
       "src/components/IIIFResourceLabel.jsx": {
         "lines": 27,
         "imports": [
-          "src/contexts/LocaleContext.js",
+          "src/contexts/LocaleContext.ts",
           "src/state/selectors/index.js"
         ]
       },
@@ -636,20 +636,20 @@
         "lines": 215,
         "imports": [
           "src/components/IIIFResourceLabel.jsx",
-          "src/contexts/FailedImageContext.js",
+          "src/contexts/FailedImageContext.ts",
           "src/hooks/index.js"
         ]
       },
       "src/components/ImageFailureMessage.jsx": {
         "lines": 43,
         "imports": [
-          "src/contexts/FailedImageContext.js"
+          "src/contexts/FailedImageContext.ts"
         ]
       },
       "src/components/ImageWithFallback.jsx": {
         "lines": 42,
         "imports": [
-          "src/contexts/FailedImageContext.js"
+          "src/contexts/FailedImageContext.ts"
         ]
       },
       "src/components/LabelValueMetadata.jsx": {
@@ -720,7 +720,7 @@
       "src/components/MiradorMenuButton.jsx": {
         "lines": 72,
         "imports": [
-          "src/contexts/WorkspaceContext.js"
+          "src/contexts/WorkspaceContext.ts"
         ]
       },
       "src/components/MosaicRenderPreview.jsx": {
@@ -740,14 +740,14 @@
       "src/components/OpenSeadragonComponent.jsx": {
         "lines": 270,
         "imports": [
-          "src/contexts/OpenSeadragonViewerContext.js"
+          "src/contexts/OpenSeadragonViewerContext.ts"
         ]
       },
       "src/components/OpenSeadragonTileSource.jsx": {
         "lines": 106,
         "imports": [
-          "src/contexts/FailedImageContext.js",
-          "src/contexts/OpenSeadragonViewerContext.js"
+          "src/contexts/FailedImageContext.ts",
+          "src/contexts/OpenSeadragonViewerContext.ts"
         ]
       },
       "src/components/OpenSeadragonViewer.jsx": {
@@ -938,7 +938,7 @@
       "src/components/WindowList.jsx": {
         "lines": 72,
         "imports": [
-          "src/contexts/WorkspaceContext.js"
+          "src/contexts/WorkspaceContext.ts"
         ]
       },
       "src/components/WindowListButton.jsx": {
@@ -1011,8 +1011,8 @@
       "src/components/WindowTopBar.jsx": {
         "lines": 126,
         "imports": [
-          "src/components/icons/WindowMaxIcon.jsx",
-          "src/components/icons/WindowMinIcon.jsx",
+          "src/components/icons/WindowMaxIcon.tsx",
+          "src/components/icons/WindowMinIcon.tsx",
           "src/config/css-ns.js",
           "src/containers/FullScreenButton.js",
           "src/containers/MiradorMenuButton.js",
@@ -1033,7 +1033,7 @@
         "imports": [
           "src/components/PluginHook.jsx",
           "src/containers/MiradorMenuButton.js",
-          "src/contexts/WorkspaceContext.js",
+          "src/contexts/WorkspaceContext.ts",
           "src/extend/usePlugins.js"
         ]
       },
@@ -1048,14 +1048,14 @@
           "src/config/css-ns.js",
           "src/containers/WindowThumbnailSettings.js",
           "src/containers/WindowViewSettings.js",
-          "src/contexts/WorkspaceContext.js",
+          "src/contexts/WorkspaceContext.ts",
           "src/extend/usePlugins.js"
         ]
       },
       "src/components/WindowTopMenuButton.jsx": {
         "lines": 50,
         "imports": [
-          "src/components/icons/WindowOptionsIcon.jsx",
+          "src/components/icons/WindowOptionsIcon.tsx",
           "src/containers/MiradorMenuButton.js",
           "src/containers/WindowTopMenu.js"
         ]
@@ -1168,7 +1168,7 @@
           "src/containers/ChangeThemeDialog.js",
           "src/containers/LanguageSettings.js",
           "src/containers/WorkspaceSelectionDialog.js",
-          "src/contexts/WorkspaceContext.js"
+          "src/contexts/WorkspaceContext.ts"
         ]
       },
       "src/components/WorkspaceMenuButton.jsx": {
@@ -1200,15 +1200,15 @@
           "src/components/PluginHook.jsx",
           "src/containers/WorkspaceExport.js",
           "src/containers/WorkspaceImport.js",
-          "src/contexts/WorkspaceContext.js"
+          "src/contexts/WorkspaceContext.ts"
         ]
       },
       "src/components/WorkspaceSelectionDialog.jsx": {
         "lines": 166,
         "imports": [
           "src/components/WorkspaceDialog.tsx",
-          "src/components/icons/WorkspaceTypeElasticIcon.jsx",
-          "src/components/icons/WorkspaceTypeMosaicIcon.jsx",
+          "src/components/icons/WorkspaceTypeElasticIcon.tsx",
+          "src/components/icons/WorkspaceTypeMosaicIcon.tsx",
           "src/containers/ScrollIndicatedDialogContent.js"
         ]
       },
@@ -1247,23 +1247,23 @@
         "lines": 17,
         "imports": []
       },
-      "src/components/icons/WindowMaxIcon.jsx": {
+      "src/components/icons/WindowMaxIcon.tsx": {
         "lines": 16,
         "imports": []
       },
-      "src/components/icons/WindowMinIcon.jsx": {
+      "src/components/icons/WindowMinIcon.tsx": {
         "lines": 16,
         "imports": []
       },
-      "src/components/icons/WindowOptionsIcon.jsx": {
+      "src/components/icons/WindowOptionsIcon.tsx": {
         "lines": 17,
         "imports": []
       },
-      "src/components/icons/WorkspaceTypeElasticIcon.jsx": {
+      "src/components/icons/WorkspaceTypeElasticIcon.tsx": {
         "lines": 158,
         "imports": []
       },
-      "src/components/icons/WorkspaceTypeMosaicIcon.jsx": {
+      "src/components/icons/WorkspaceTypeMosaicIcon.tsx": {
         "lines": 163,
         "imports": []
       },
@@ -1277,11 +1277,11 @@
           "src/components/icons/RestoreZoomIcon.tsx",
           "src/components/icons/ThumbnailNavigationBottomIcon.tsx",
           "src/components/icons/ThumbnailNavigationRightIcon.tsx",
-          "src/components/icons/WindowMaxIcon.jsx",
-          "src/components/icons/WindowMinIcon.jsx",
-          "src/components/icons/WindowOptionsIcon.jsx",
-          "src/components/icons/WorkspaceTypeElasticIcon.jsx",
-          "src/components/icons/WorkspaceTypeMosaicIcon.jsx"
+          "src/components/icons/WindowMaxIcon.tsx",
+          "src/components/icons/WindowMinIcon.tsx",
+          "src/components/icons/WindowOptionsIcon.tsx",
+          "src/components/icons/WorkspaceTypeElasticIcon.tsx",
+          "src/components/icons/WorkspaceTypeMosaicIcon.tsx"
         ]
       },
       "src/components/index.js": {
@@ -1398,17 +1398,17 @@
       "src/config/css-ns.js": {
         "lines": 11,
         "imports": [
-          "src/config/settings.js"
+          "src/config/settings.ts"
         ]
       },
       "src/config/index.js": {
         "lines": 3,
         "imports": [
           "src/config/css-ns.js",
-          "src/config/settings.js"
+          "src/config/settings.ts"
         ]
       },
-      "src/config/settings.js": {
+      "src/config/settings.ts": {
         "lines": 611,
         "imports": []
       },
@@ -2282,55 +2282,55 @@
           "src/containers/ZoomControls.js"
         ]
       },
-      "src/contexts/FailedImageContext.js": {
-        "lines": 9,
+      "src/contexts/FailedImageContext.ts": {
+        "lines": 16,
         "imports": []
       },
       "src/contexts/FailedImageProvider.jsx": {
         "lines": 35,
         "imports": [
-          "src/config/settings.js",
-          "src/contexts/FailedImageContext.js"
+          "src/config/settings.ts",
+          "src/contexts/FailedImageContext.ts"
         ]
       },
-      "src/contexts/FullScreenContext.js": {
+      "src/contexts/FullScreenContext.ts": {
         "lines": 6,
         "imports": []
       },
-      "src/contexts/LocaleContext.js": {
+      "src/contexts/LocaleContext.ts": {
         "lines": 6,
         "imports": []
       },
-      "src/contexts/OpenSeadragonViewerContext.js": {
+      "src/contexts/OpenSeadragonViewerContext.ts": {
         "lines": 6,
         "imports": []
       },
-      "src/contexts/WorkspaceContext.js": {
+      "src/contexts/WorkspaceContext.ts": {
         "lines": 6,
         "imports": []
       },
       "src/contexts/index.js": {
         "lines": 5,
         "imports": [
-          "src/contexts/FullScreenContext.js",
-          "src/contexts/WorkspaceContext.js"
+          "src/contexts/FullScreenContext.ts",
+          "src/contexts/WorkspaceContext.ts"
         ]
       },
-      "src/extend/PluginContext.js": {
+      "src/extend/PluginContext.ts": {
         "lines": 6,
         "imports": []
       },
       "src/extend/PluginProvider.jsx": {
         "lines": 23,
         "imports": [
-          "src/extend/PluginContext.js",
+          "src/extend/PluginContext.ts",
           "src/extend/pluginMapping.js"
         ]
       },
       "src/extend/index.js": {
         "lines": 10,
         "imports": [
-          "src/extend/PluginContext.js",
+          "src/extend/PluginContext.ts",
           "src/extend/PluginProvider.jsx",
           "src/extend/pluginMapping.js",
           "src/extend/pluginPreprocessing.js",
@@ -2357,13 +2357,13 @@
       "src/extend/usePlugins.js": {
         "lines": 14,
         "imports": [
-          "src/extend/PluginContext.js"
+          "src/extend/PluginContext.ts"
         ]
       },
       "src/extend/withPlugins.jsx": {
         "lines": 47,
         "imports": [
-          "src/extend/PluginContext.js"
+          "src/extend/PluginContext.ts"
         ]
       },
       "src/hooks/index.js": {
@@ -2686,7 +2686,7 @@
       "src/state/createStore.js": {
         "lines": 34,
         "imports": [
-          "src/config/settings.js",
+          "src/config/settings.ts",
           "src/state/reducers/rootReducer.js",
           "src/state/sagas/index.js"
         ]
@@ -2736,7 +2736,7 @@
       "src/state/reducers/config.js": {
         "lines": 40,
         "imports": [
-          "src/config/settings.js",
+          "src/config/settings.ts",
           "src/state/actions/action-types.js"
         ]
       },
@@ -2821,7 +2821,7 @@
       "src/state/reducers/workspace.js": {
         "lines": 112,
         "imports": [
-          "src/config/settings.js",
+          "src/config/settings.ts",
           "src/state/actions/action-types.js"
         ]
       },
@@ -3009,7 +3009,7 @@
       "src/state/selectors/utils.js": {
         "lines": 19,
         "imports": [
-          "src/config/settings.js"
+          "src/config/settings.ts"
         ]
       },
       "src/state/selectors/viewer.js": {
@@ -3053,8 +3053,8 @@
     },
     "stats": {
       "files": 329,
-      "jsFiles": 293,
-      "tsFiles": 36,
+      "jsFiles": 281,
+      "tsFiles": 48,
       "edges": 1038,
       "layers": 42,
       "cycleFiles": 0
@@ -3065,13 +3065,15 @@
       329,
       317,
       305,
-      293
+      293,
+      281
     ],
     "any": [
       0,
       7,
       9,
-      27
+      27,
+      29
     ]
   },
   "batches": [
@@ -3123,7 +3125,7 @@
           "file": "src/components/AudioViewer.tsx",
           "kind": "any",
           "symbol": "AudioViewerProps.audioOptions",
-          "note": "Record<string, any> — unknown spread props"
+          "note": "Record<string, any> \u2014 unknown spread props"
         },
         {
           "file": "src/components/AudioViewer.tsx",
@@ -3134,7 +3136,7 @@
           "file": "src/components/AudioViewer.tsx",
           "kind": "any",
           "symbol": "AudioViewerProps.audioResources",
-          "note": "any[] — IIIF objects, shape not known here"
+          "note": "any[] \u2014 IIIF objects, shape not known here"
         },
         {
           "file": "src/components/AudioViewer.tsx",
@@ -3145,7 +3147,7 @@
           "file": "src/components/AudioViewer.tsx",
           "kind": "any",
           "symbol": "AudioViewerProps.captions",
-          "note": "any[] — IIIF objects, shape not known here"
+          "note": "any[] \u2014 IIIF objects, shape not known here"
         },
         {
           "file": "src/components/CollapsibleSection.tsx",
@@ -3168,7 +3170,7 @@
           "file": "src/components/CollapsibleSection.tsx",
           "kind": "cast",
           "symbol": "variant",
-          "note": "\"compact\" as any — pre-existing custom theme variant not in MUI types"
+          "note": "\"compact\" as any \u2014 pre-existing custom theme variant not in MUI types"
         },
         {
           "file": "src/components/ErrorDialog.tsx",
@@ -3205,7 +3207,7 @@
           "file": "src/components/IIIFIFrameCommunication.tsx",
           "kind": "cast",
           "symbol": "style.visibility",
-          "note": "'hidden' as const — prevents widening to string for CSSProperties"
+          "note": "'hidden' as const \u2014 prevents widening to string for CSSProperties"
         },
         {
           "file": "src/components/IIIFIFrameCommunication.tsx",
@@ -3266,7 +3268,7 @@
           "file": "src/components/ManifestForm.tsx",
           "kind": "cast",
           "symbol": "slotProps",
-          "note": "as any — MUI v6 slot key mismatch on existing JSX"
+          "note": "as any \u2014 MUI v6 slot key mismatch on existing JSX"
         },
         {
           "file": "src/components/ManifestListItemError.tsx",
@@ -3340,7 +3342,7 @@
           "file": "src/components/ScrollIndicatedDialogContent.tsx",
           "kind": "cast",
           "symbol": "getOverlayAlpha() result",
-          "note": "as unknown as number — .toFixed() returns string; alpha() needs number"
+          "note": "as unknown as number \u2014 .toFixed() returns string; alpha() needs number"
         },
         {
           "file": "src/components/ScrollIndicatedDialogContent.tsx",
@@ -3386,11 +3388,11 @@
           "note": "string | null"
         }
       ],
-      "session": "bob_sessions/b01.json",
       "ratchet": {
         "js": 317,
         "any": 7
-      }
+      },
+      "notes": "Bob session not exported \u2014 the task was deleted before export. Work is in git commit \"batch 1\"."
     },
     {
       "id": "b02",
@@ -3442,13 +3444,13 @@
           "file": "src/components/VideoViewer.tsx",
           "kind": "any",
           "symbol": "VideoViewerProps.captions",
-          "note": "any[] — IIIF resource shape unknown"
+          "note": "any[] \u2014 IIIF resource shape unknown"
         },
         {
           "file": "src/components/VideoViewer.tsx",
           "kind": "any",
           "symbol": "VideoViewerProps.videoResources",
-          "note": "any[] — IIIF resource shape unknown"
+          "note": "any[] \u2014 IIIF resource shape unknown"
         },
         {
           "file": "src/components/WindowTopBarTitle.tsx",
@@ -3466,13 +3468,13 @@
           "file": "src/components/WindowTopBarTitle.tsx",
           "kind": "nullable",
           "symbol": "error",
-          "note": "string | null — default in source was null"
+          "note": "string | null \u2014 default in source was null"
         },
         {
           "file": "src/components/WorkspaceAddButton.tsx",
           "kind": "cast",
           "symbol": "useWidth reduce seed",
-          "note": "null as string | null — enables correct return-type inference"
+          "note": "null as string | null \u2014 enables correct return-type inference"
         },
         {
           "file": "src/components/WorkspaceAddButton.tsx",
@@ -3568,11 +3570,25 @@
       },
       "finishedAt": "2026-09-26T20:32:02.840Z",
       "durationSec": 368,
-      "notes": "Same Bob without the Migrator mode: refactored while converting. Rejected at gate 2, rolled back.",
+      "notes": "A/B run: same Bob in plain Agent mode, no Migrator mode, no contract. Full suite green (1255 tests), typecheck green \u2014 still rejected at gate 2: it refactored while converting and touched files outside the batch. Rolled back.",
       "ratchet": {
         "js": 293,
         "any": 9
-      }
+      },
+      "semantic": [
+        {
+          "file": "src/components/icons/*.jsx",
+          "kind": "other",
+          "symbol": "refactors while converting",
+          "note": "cleanups and reorders beyond type annotations \u2014 behavior not provably unchanged"
+        },
+        {
+          "file": "src/lib/AnnotationItem.js",
+          "kind": "other",
+          "symbol": "file outside the batch converted",
+          "note": "left as a broken .ts with undeclared class fields"
+        }
+      ]
     },
     {
       "id": "b04",
@@ -3610,7 +3626,7 @@
           "file": "src/lib/AnnotationItem.ts",
           "kind": "any",
           "symbol": "resource",
-          "note": "Field — raw WebAnnotation object, shape unknown at compile time"
+          "note": "Field \u2014 raw WebAnnotation object, shape unknown at compile time"
         },
         {
           "file": "src/lib/AnnotationItem.ts",
@@ -3622,13 +3638,13 @@
           "file": "src/lib/AnnotationItem.ts",
           "kind": "nullable",
           "symbol": "_id",
-          "note": "string | undefined — lazy-initialized id, undefined until first get id access"
+          "note": "string | undefined \u2014 lazy-initialized id, undefined until first get id access"
         },
         {
           "file": "src/lib/AnnotationResource.ts",
           "kind": "any",
           "symbol": "resource",
-          "note": "Field — raw IIIF annotation object"
+          "note": "Field \u2014 raw IIIF annotation object"
         },
         {
           "file": "src/lib/AnnotationResource.ts",
@@ -3640,25 +3656,25 @@
           "file": "src/lib/AnnotationResource.ts",
           "kind": "nullable",
           "symbol": "_id",
-          "note": "string | undefined — lazy-initialized id"
+          "note": "string | undefined \u2014 lazy-initialized id"
         },
         {
           "file": "src/lib/CanvasGroupings.ts",
           "kind": "any",
           "symbol": "canvases",
-          "note": "Field — IIIF canvas objects, shape from external manifesto lib"
+          "note": "Field \u2014 IIIF canvas objects, shape from external manifesto lib"
         },
         {
           "file": "src/lib/CanvasGroupings.ts",
           "kind": "nullable",
           "symbol": "_groupings",
-          "note": "any[][] | null — memoized groupings, null before first groupings() call"
+          "note": "any[][] | null \u2014 memoized groupings, null before first groupings() call"
         },
         {
           "file": "src/lib/MiradorManifest.ts",
           "kind": "any",
           "symbol": "manifest",
-          "note": "Field — manifesto Manifest instance, no @types package"
+          "note": "Field \u2014 manifesto Manifest instance, no @types package"
         },
         {
           "file": "src/lib/MiradorManifest.ts",
@@ -3670,13 +3686,13 @@
           "file": "src/lib/MosaicLayout.ts",
           "kind": "type",
           "symbol": "MosaicKey",
-          "note": "Local type alias string | number — MosaicKey not exported from react-mosaic-component"
+          "note": "Local type alias string | number \u2014 MosaicKey not exported from react-mosaic-component"
         },
         {
           "file": "src/lib/MosaicLayout.ts",
           "kind": "nullable",
           "symbol": "layout",
-          "note": "MosaicNode<MosaicKey> | null — null is a valid empty layout in react-mosaic"
+          "note": "MosaicNode<MosaicKey> | null \u2014 null is a valid empty layout in react-mosaic"
         },
         {
           "file": "src/lib/MosaicLayout.ts",
@@ -3694,7 +3710,7 @@
           "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
           "kind": "any",
           "symbol": "viewer",
-          "note": "OSD Viewer — no @types/openseadragon package"
+          "note": "OSD Viewer \u2014 no @types/openseadragon package"
         },
         {
           "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
@@ -3706,19 +3722,19 @@
           "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
           "kind": "nullable",
           "symbol": "viewportWidth",
-          "note": "number | undefined — set in resize(), not in constructor"
+          "note": "number | undefined \u2014 set in resize(), not in constructor"
         },
         {
           "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
           "kind": "nullable",
           "symbol": "viewportHeight",
-          "note": "number | undefined — set in resize(), not in constructor"
+          "note": "number | undefined \u2014 set in resize(), not in constructor"
         },
         {
           "file": "src/lib/OpenSeadragonCanvasOverlay.ts",
           "kind": "nullable",
           "symbol": "clearBeforeRedraw",
-          "note": "boolean | undefined — optional flag read in canvasUpdate(), never set in constructor"
+          "note": "boolean | undefined \u2014 optional flag read in canvasUpdate(), never set in constructor"
         },
         {
           "file": "src/lib/TruncatedHit.ts",
@@ -3739,7 +3755,7 @@
           "note": "Constructor params"
         }
       ],
-      "notes": "3 pre-existing typecheck errors in FullScreenContext.ts, LocaleContext.ts, PluginContext.ts (createContext() missing type arg) — all outside this batch, carried from prior batch. All 117 related tests pass.",
+      "notes": "Recorded once prematurely with 3 typecheck errors (class fields used without declarations in AnnotationItem). Fixed with types only \u2014 field declarations \u2014 and re-checked green before ratchet commit.",
       "ratchet": {
         "js": 293,
         "any": 27
@@ -3747,6 +3763,143 @@
       "finishedAt": "2026-09-26T20:52:45.674Z",
       "durationSec": 882,
       "session": "bob_sessions/b04.json"
+    },
+    {
+      "id": "b05",
+      "layer": 0,
+      "files": [
+        "src/components/icons/WindowMaxIcon.jsx",
+        "src/components/icons/WindowMinIcon.jsx",
+        "src/components/icons/WindowOptionsIcon.jsx",
+        "src/components/icons/WorkspaceTypeElasticIcon.jsx",
+        "src/components/icons/WorkspaceTypeMosaicIcon.jsx",
+        "src/config/settings.js",
+        "src/contexts/FailedImageContext.js",
+        "src/contexts/FullScreenContext.js",
+        "src/contexts/LocaleContext.js",
+        "src/contexts/OpenSeadragonViewerContext.js",
+        "src/contexts/WorkspaceContext.js",
+        "src/extend/PluginContext.js"
+      ],
+      "status": "done",
+      "startedAt": "2026-09-26T20:54:07.575Z",
+      "attempts": 1,
+      "checks": {
+        "typecheck": {
+          "ok": true,
+          "errors": 0
+        },
+        "tests": {
+          "ok": true,
+          "passed": 1255,
+          "failed": 0
+        }
+      },
+      "finishedAt": "2026-09-26T21:01:39.954Z",
+      "durationSec": 452,
+      "semantic": [
+        {
+          "file": "src/components/icons/WindowMaxIcon.tsx",
+          "kind": "interface",
+          "symbol": "props",
+          "note": "Typed as SvgIconProps (MUI imported interface)"
+        },
+        {
+          "file": "src/components/icons/WindowMinIcon.tsx",
+          "kind": "interface",
+          "symbol": "props",
+          "note": "Typed as SvgIconProps (MUI imported interface)"
+        },
+        {
+          "file": "src/components/icons/WindowOptionsIcon.tsx",
+          "kind": "interface",
+          "symbol": "props",
+          "note": "Typed as SvgIconProps (MUI imported interface)"
+        },
+        {
+          "file": "src/components/icons/WorkspaceTypeElasticIcon.tsx",
+          "kind": "interface",
+          "symbol": "props",
+          "note": "Typed as SvgIconProps (MUI imported interface)"
+        },
+        {
+          "file": "src/components/icons/WorkspaceTypeMosaicIcon.tsx",
+          "kind": "interface",
+          "symbol": "props",
+          "note": "Typed as SvgIconProps (MUI imported interface)"
+        },
+        {
+          "file": "src/contexts/FailedImageContext.ts",
+          "kind": "interface",
+          "symbol": "FailedImageContextValue",
+          "note": "New interface for context value shape"
+        },
+        {
+          "file": "src/contexts/FailedImageContext.ts",
+          "kind": "optional",
+          "symbol": "FailedImageContextValue.failedImages",
+          "note": "Set<string> | undefined"
+        },
+        {
+          "file": "src/contexts/FailedImageContext.ts",
+          "kind": "optional",
+          "symbol": "FailedImageContextValue.hasFailed",
+          "note": "optional boolean"
+        },
+        {
+          "file": "src/contexts/FailedImageContext.ts",
+          "kind": "optional",
+          "symbol": "FailedImageContextValue.notifyFailure imageId param",
+          "note": "string | undefined"
+        },
+        {
+          "file": "src/contexts/FullScreenContext.ts",
+          "kind": "any",
+          "symbol": "createContext<any>",
+          "note": "react-full-screen handle type unknown without its typings"
+        },
+        {
+          "file": "src/contexts/LocaleContext.ts",
+          "kind": "nullable",
+          "symbol": "createContext<string | undefined>",
+          "note": "no-arg createContext implies undefined default"
+        },
+        {
+          "file": "src/contexts/OpenSeadragonViewerContext.ts",
+          "kind": "nullable",
+          "symbol": "createContext<RefObject<any> | undefined>",
+          "note": "default is undefined; provider passes a useRef"
+        },
+        {
+          "file": "src/contexts/OpenSeadragonViewerContext.ts",
+          "kind": "any",
+          "symbol": "RefObject<any>",
+          "note": "OSD viewer type not locally typed"
+        },
+        {
+          "file": "src/contexts/WorkspaceContext.ts",
+          "kind": "nullable",
+          "symbol": "RefObject<HTMLElement | null>",
+          "note": "React RefObject .current type"
+        },
+        {
+          "file": "src/extend/PluginContext.ts",
+          "kind": "nullable",
+          "symbol": "createContext<Record<string, any> | undefined>",
+          "note": "no-arg createContext implies undefined default"
+        },
+        {
+          "file": "src/extend/PluginContext.ts",
+          "kind": "any",
+          "symbol": "Record<string, any>",
+          "note": "plugin map values are variably-shaped"
+        }
+      ],
+      "session": "bob_sessions/b05.json",
+      "ratchet": {
+        "js": 281,
+        "any": 29
+      }
     }
   ]
 }
